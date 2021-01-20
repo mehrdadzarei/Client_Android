@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Client</string>
+    <string name="titleServer">Server IP:</string>
+    <string name="serverIP">255.255.255.255</string>
+    <string name="titlePort">Port No.:</string>
+    <string name="port">5050</string>
+    <string name="connect">Connect</string>
+    <string name="titleMessage">Transmit</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="titleReceived">Received</string>
+    <string name="disconnect">Disconnect</string>
+</resources>

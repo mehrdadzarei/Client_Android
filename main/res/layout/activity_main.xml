@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003366"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleSId"
+        android:text="@string/titleServer"
+        android:textColor="#e6e6fa"
+        android:textSize="20sp"
+        android:layout_alignStart="@+id/messageId"
+        android:layout_alignLeft="@+id/messageId"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/serverId"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/serverIP"
+        android:layout_alignBaseline="@+id/titleSId"
+        android:layout_toEndOf="@+id/titleSId"
+        android:layout_toRightOf="@+id/titleSId"
+        android:background="#e6e6fa"
+        android:textSize="20sp"
+        android:gravity="top"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/titlePId"
+        android:text="@string/titlePort"
+        android:textColor="#e6e6fa"
+        android:textSize="20sp"
+        android:layout_alignStart="@+id/messageId"
+        android:layout_alignLeft="@+id/messageId"
+        android:layout_below="@+id/titleSId"
+        android:layout_marginTop="5dp"
+        android:paddingRight="11dp"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/portId"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/port"
+        android:layout_alignBaseline="@+id/titlePId"
+        android:layout_toEndOf="@+id/titlePId"
+        android:layout_toRightOf="@+id/titlePId"
+        android:background="#e6e6fa"
+        android:textSize="20sp"
+        android:gravity="top"
+        android:paddingLeft="10dp"/>
+
+    <Button
+        android:id="@+id/connectId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/titlePId"
+        android:layout_marginTop="5dp"
+        android:text="@string/connect"
+        app:backgroundTint="@color/teal_700" />
+
+    <TextView
+        android:id="@+id/titleId"
+        android:text="@string/titleMessage"
+        android:textColor="#e6e6fa"
+        android:textSize="20sp"
+        android:layout_below="@+id/connectId"
+        android:layout_alignStart="@+id/messageId"
+        android:layout_alignLeft="@+id/messageId"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/messageId"
+        android:layout_width="275dp"
+        android:layout_height="100dp"
+        android:hint="@string/message"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/titleId"
+        android:background="#e6e6fa"
+        android:textSize="20sp"
+        android:gravity="top"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/sendId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messageId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/send"
+        android:enabled="false"
+        app:backgroundTint="@color/teal_700" />
+
+    <TextView
+        android:id="@+id/titleReId"
+        android:text="@string/titleReceived"
+        android:textColor="#e6e6fa"
+        android:textSize="20sp"
+        android:layout_below="@+id/sendId"
+        android:layout_alignStart="@+id/messageId"
+        android:layout_alignLeft="@+id/messageId"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/receivedId"
+        android:layout_width="275dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/titleReId"
+        android:layout_centerHorizontal="true"
+        android:background="#e6e6fa"
+        android:editable="false"
+        android:gravity="top"
+        android:padding="10dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/disconnectId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="@string/disconnect"
+        android:enabled="false"
+        app:backgroundTint="@color/teal_700" />
+
+</RelativeLayout>
